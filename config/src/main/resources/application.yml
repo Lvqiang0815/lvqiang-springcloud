@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          #uri: https://gitee.com/lvqiangcode/config-repository
+          #username: 2915785276@qq.com
+          #password: '110110@lv'
+          uri: https://github.com/Lvqiang1990/config-repository.git
+          username: lv863314689@sina.com
+          password: '110110@Lv'
+server:
+  port: 8012
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+
